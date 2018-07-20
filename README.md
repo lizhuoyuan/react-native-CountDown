@@ -3,7 +3,7 @@
 
   封装的一个倒计时按钮,仅仅使用TouchableOpacity，View和Text.  <br/>
   
-![](https://github.com/lizhuoyuan/react-native-CountDown/blob/master/1.gif)
+![](3.gif)
 
 
 ## 安装
@@ -35,8 +35,8 @@ import CountDown from 'react-native-zycountdown';
     return true}}
 />
 ```
-![](https://github.com/lizhuoyuan/react-native-CountDown/blob/master/1.gif)
-![](https://github.com/lizhuoyuan/react-native-CountDown/blob/master/1.gif)
+![](1.gif)
+![](2.gif)
 
 ## 属性：
 | Prop | Type | Default | Description
