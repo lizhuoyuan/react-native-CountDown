@@ -1,20 +1,29 @@
 {
   "name": "react-native-zycountdown",
-  "version": "1.1.0",
-  "description": "",
+  "version": "1.2.0",
+  "description": "用于react-native的计数组件，倒计时组件",
   "main": "CountDown.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "李卓原",
-  "license": "ISC",
+  "author": {
+    "name": "李卓原",
+    "email": "zhuoyuan93@gmail.com",
+    "url": "https://github.com/lizhuoyuan/"
+  },
+  "license": "MIT",
   "keywords": [
     "react-native",
     "react",
     "react-component",
+    "react-native-zycountdown",
     "react-native-countdown",
     "countdown",
     "ios",
     "android"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizhuoyuan/react-native-CountDown"
+  }
 }
