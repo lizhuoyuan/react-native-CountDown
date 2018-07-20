@@ -34,9 +34,33 @@ import CountDown from 'react-native-zycountdown';
     ToastAndroid.show('Start counting',ToastAndroid.SHORT);
     return true}}
 />
+
+
+//下面这种写法，在点击方法内，我进行了逻辑判断，不符合逻辑的情况下不进行计时操作，返回false，
+<CountDown
+  count={10}
+  onClick={this._sendMessage}
+  style={{backgroundColor: 'green', height: ScreenUtil.scaleSize(30)}}/>
+                            
+/**
+ * 执行点击方法，并进行逻辑判断，满足条件开始计时
+ */
+ _sendMessage = () => {
+        if (“不是手机号码“) {
+        //条件不符，不开始计时
+            ToastAndroid.show('请输入正确的手机号码', ToastAndroid.SHORT);
+            return false; 
+        }
+        //条件符合走下面发送验证码的方法，返回true，开始计时
+        this._signInWithPhone();
+        return true
+ };         
+ 
+ _signInWithPhone = async () => {...}
 ```
 ![](1.gif)
 ![](2.gif)
+![](4.gif)
 
 ## 属性：
 | Prop | Type | Default | Description
