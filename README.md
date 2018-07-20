@@ -11,8 +11,8 @@
 #####   或者
 `yarn add react-native-zycountdown`
 
-##使用
-3个使用方式样式分别对应下面3张图片
+## 使用
+以下3个使用方式样式分别对应下面3张图片
 ```
 import CountDown from 'react-native-zycountdown';
 ...
