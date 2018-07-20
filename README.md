@@ -47,11 +47,11 @@ import CountDown from 'react-native-zycountdown';
  */
  _sendMessage = () => {
         if (“不是手机号码“) {
-        //条件不符，不开始计时
-            ToastAndroid.show('请输入正确的手机号码', ToastAndroid.SHORT);
+        //条件不符，返回false 不开始计时
+            ToastAndroid.show('手机号码格式不对', ToastAndroid.SHORT);
             return false; 
         }
-        //条件符合走下面发送验证码的方法，返回true，开始计时
+        //条件符合开始计时：返回true 走下面发送验证码的方法并开始计时
         this._signInWithPhone();
         return true
  };         
