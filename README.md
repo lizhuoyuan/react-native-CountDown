@@ -3,9 +3,8 @@
 
   封装的一个倒计时按钮,仅仅使用TouchableOpacity，View和Text.  <br/>
   
-  
-![](1.gif)
-![](2.gif)
+![](3.gif)  
+
 
 ## 安装
 `npm i react-native-zycountdown`
@@ -13,7 +12,7 @@
 `yarn add react-native-zycountdown`
 
 ##使用
-两个使用方式样式分别对应上面两张图片
+两个使用方式样式分别对应下面两张图片
 ```
 import CountDown from 'react-native-zycountdown';
 ...
@@ -36,6 +35,8 @@ import CountDown from 'react-native-zycountdown';
     return true}}
 />
 ```
+![](1.gif)
+![](2.gif)
 
 ## 属性：
 | Prop | Type | Default | Description
