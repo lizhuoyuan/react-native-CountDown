@@ -1,6 +1,6 @@
 {
   "name": "react-native-zycountdown",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "用于react-native的计数组件，倒计时组件",
   "main": "CountDown.js",
   "scripts": {

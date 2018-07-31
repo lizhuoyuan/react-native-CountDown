@@ -11,7 +11,8 @@ import {
     StyleSheet,
     Text,
     TouchableOpacity,
-    ViewPropTypes
+    ViewPropTypes,
+    ImageBackground
 } from 'react-native';
 
 export default class CountDown extends React.Component {
@@ -43,13 +44,15 @@ export default class CountDown extends React.Component {
     }
 
     render() {
+        let {source, style, textStyle} = this.props;
         return (
             <TouchableOpacity
+                style={[styles.countView, style]}
                 disabled={this.state.disabled}
                 onPress={this._countDown}>
-                <View style={[styles.countView, this.props.style]}>
-                    <Text style={[styles.countText, this.props.textStyle]}>{this.state.text}</Text>
-                </View>
+                <ImageBackground source={source} style={styles.backImg}>
+                    <Text style={[styles.countText, textStyle]}>{this.state.text}</Text>
+                </ImageBackground>
             </TouchableOpacity>
         );
     }
@@ -87,11 +90,13 @@ export default class CountDown extends React.Component {
 
 const styles = StyleSheet.create({
     countView: {
+        backgroundColor: '#3F39C9',
+    },
+    backImg: {
         alignItems: 'center',
         justifyContent: 'center',
+        flex: 1,
         paddingHorizontal: 5,
-        height: 40,
-        backgroundColor: 'green'
     },
     countText: {
         color: '#fff'

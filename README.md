@@ -24,6 +24,7 @@ import CountDown from 'react-native-zycountdown';
 />
 
 <CountDown
+    source={require('IMG/send.png')}
     style={{backgroundColor: 'blue'}}
     textStyle={{color: 'yellow'}}
     count={10}
@@ -66,7 +67,8 @@ import CountDown from 'react-native-zycountdown';
 | Prop | Type | Default | Description
 | ---------- | :-----------:         |:---------------:| -----------|
 | style      | ViewPropTypes.style |{alignItems: 'center',justifyContent: 'center',paddingHorizontal: 5,height: 40,backgroundColor:'green'}              |组件的样式 
-| textStyle      | ViewPropTypes.style               |  { color: '#fff'}               |文字的样式 
+| source      | require('src/img.png')              |  -               |背景图片
+| textStyle      | ViewPropTypes.style               |  { color: '#fff'}               |文字的样式
 | onClick  | func   | -               |点击组件时触发的方法，返回true则触发计数，返回false则不触发计数
 | count  | number   | 60               |初始数字
 | title  | string   | send'              |未计时的时候显示的文字
